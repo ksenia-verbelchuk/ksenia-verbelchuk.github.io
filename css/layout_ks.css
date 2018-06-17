@@ -1,0 +1,360 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+}
+
+
+.container,
+.navbar {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* Плавні зміни властивостей лінків */
+
+a {
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+/*************************************/
+
+header .row {
+    min-height: 100vh;
+}
+
+.vcenter {
+    display: flex;
+    align-items: center;
+    min-height: 40vw;
+    padding: 0 70px;
+    color: #fff;
+    position: relative;
+}
+
+strong {
+    font-weight: 800;
+    font-size: 36px;
+    text-align: left;
+}
+
+b {
+    font-weight: 600;
+    font-size: 30px;
+    text-align: left;
+    color: #E63323;
+}
+
+p {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+#about1 .row {
+    flex-direction: row-reverse;
+}
+
+#about1 .row > div:first-child {
+    background-image: url("../img/cloud_about_lg_ks.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+
+}
+
+
+
+#about1 {
+    min-height: inherit;
+    padding: 0px;
+}
+
+h5 {
+    font-family: sans-serif;
+    font-size: 20pt;
+    font-weight: 600;
+}
+
+
+h1 {
+    font-family: sans-serif;
+    font-size: 30pt;
+    font-weight: 900;
+}
+
+#skills {
+    min-height: 30vh;
+    background-color: #E63323;
+}
+
+.skill-cloud {
+    height: 150px;
+    background-image: url("../img/cloud_skills_ks.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 30px;
+    align-content: center;
+}
+
+h2 {
+    color: #E63323;
+    font-family: sans-serif;
+    font-style: normal;
+    font-size: 30pt;
+    position: relative;
+    margin-bottom: -1px;
+    padding: 8px;
+    font-weight: 900;
+}
+
+h3 {
+    color: #ccc;
+    position: relative;
+    font-size: 13pt;
+    text-align: center;
+    margin-left: 80px;
+    margin-bottom: 50px;
+}
+
+.skill {
+    height: 60px;
+    width: 60px;
+    border-radius: 10px;
+    display: inline-block;
+    position: relative;
+    margin: 10px;
+}
+
+h4 {
+    font-family: sans-serif;
+    color: #ffffff;
+    font-size: 14pt;
+}
+
+#cont3 {
+    min-height: 30vh;
+    background-color: #E63323;
+}
+
+
+.contact-cloud {
+    height: 300px;
+    background-image: url("../img/cloud_contact_ks.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    align-content: center;
+
+    font-family: sans-serif;
+    font-size: 25pt;
+    font-weight: 800;
+    color: #E63323;
+
+    text-align: center;
+    padding: 100px;
+}
+
+.w-5 {
+    position: absolute;
+    margin: 10px;
+
+}
+
+.form {
+    opacity: 0.7;
+    padding: 30px;
+    margin-top: 30px;
+}
+
+@-webkit-keyframes swing {
+  15% {
+    -webkit-transform: translateX(9px);
+    transform: translateX(9px);
+  }
+  30% {
+    -webkit-transform: translateX(-9px);
+    transform: translateX(-9px);
+  }
+  40% {
+    -webkit-transform: translateX(6px);
+    transform: translateX(6px);
+  }
+  50% {
+    -webkit-transform: translateX(-6px);
+    transform: translateX(-6px);
+  }
+  65% {
+    -webkit-transform: translateX(3px);
+    transform: translateX(3px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@keyframes swing {
+  15% {
+    -webkit-transform: translateX(9px);
+    transform: translateX(9px);
+  }
+  30% {
+    -webkit-transform: translateX(-9px);
+    transform: translateX(-9px);
+  }
+  40% {
+    -webkit-transform: translateX(6px);
+    transform: translateX(6px);
+  }
+  50% {
+    -webkit-transform: translateX(-6px);
+    transform: translateX(-6px);
+  }
+  65% {
+    -webkit-transform: translateX(3px);
+    transform: translateX(3px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+.swing:hover {
+  -webkit-animation: swing 0.6s ease;
+  animation: swing 0.6s ease;
+   -webkit-animation-iteration-count: 1;
+   animation-iteration-count: 1;
+}
+
+
+
+
+
+/**************************************/
+
+@media screen and (max-width:768px) {
+    #cont3 {
+        min-height: 20vh;
+    }
+
+
+    #skills {
+        min-height: 20vh;
+    }
+
+    #about1 .row {
+        flex-direction: row;
+    }
+
+    #about1 .row > div:first-child {
+        background-image: url("../img/cloud_about_ks.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        min-width: 50vh;
+        height: 460px;
+    }
+
+    .vcenter {
+        padding-left: 60px;
+        padding-right: 50px;
+        min-height: 0vw;
+        margin-top: 80px;
+    }
+    strong {
+        font-weight: 800;
+        font-size: 32px;
+        text-align: left;
+    }
+
+    b {
+        font-weight: 600;
+        font-size: 26px;
+        text-align: left;
+    }
+
+    p {
+        text-align: left;
+        font-size: 22px;
+        font-weight: 400;
+    }
+
+
+    .slider-slick {
+        min-height: 60vh;
+    }
+
+    .gallery-container {
+        min-height: 60vh;
+    }
+    
+
+}
+
+
+
+@media screen and (max-width:575px) {
+    .container,
+    .navbar {
+        padding-left: 5px;
+        padding-right: 5px;
+      
+    }
+
+    .contact-cloud {
+
+        text-align: center;
+        padding: 100px;
+        margin: 20px;
+        font-size: 15pt;
+    }
+    
+     #about1 .row > div:first-child {
+        background-image: url("../img/cloud_about_ks.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        height: 295px;
+    }
+    
+    .d-block {
+        
+    }
+    
+
+    .vcenter {
+        padding-left: 23px;
+        padding-right: 10px;
+        min-height: 0vw;
+        margin-top: 50px;
+    }
+    
+    strong {
+        font-weight: 800;
+        font-size: 22px;
+        text-align: left;
+    }
+
+    b {
+        font-weight: 600;
+        font-size: 16px;
+        text-align: left;
+    }
+
+    p {
+        text-align: left;
+        font-size: 15.5px;
+        font-weight: 400;
+    }
+
+
+}

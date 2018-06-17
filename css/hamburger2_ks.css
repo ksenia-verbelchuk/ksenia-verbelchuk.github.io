@@ -1,0 +1,161 @@
+section, header {
+    min-height: 100vh;    /* Тимчасово, можна видалити */
+    padding: 50px 0;    /* Тимчасово, можна видалити */
+}
+
+#mainNav .navbar-toggler {
+    outline: 0;
+}
+
+#mainNav.navbar-shrink {
+    background: #ffffff;    /* Колір фону навігаційної панелі після скролу */
+}
+
+#mainNav .navbar-toggler span {
+    background: #ffffff;         /* Колір меню 'гамбургер' */
+    border: 0;
+    outline: 0;
+}
+
+#mainNav.navbar-shrink .navbar-toggler span {
+    background-color: #E63323;    /* Колір меню 'гамбургер' після скролу */
+}
+
+#nav-icon1,
+#nav-icon2,
+#nav-icon3,
+#nav-icon4 {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+
+/* Icon 2 */
+
+#nav-icon2 {}
+
+#nav-icon2 span {
+    display: block;
+    position: absolute;
+    height: 4px;
+    width: 50%;
+    opacity: 1;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+}
+
+#nav-icon2.collapsed span:nth-child(even) {
+    left: 50%;
+    border-radius: 0 4px 4px 0;
+}
+
+#nav-icon2.collapsed span:nth-child(odd) {
+    left: 0px;
+    border-radius: 4px 0 0 4px;
+}
+
+#nav-icon2.collapsed span:nth-child(1),
+#nav-icon2.collapsed span:nth-child(2) {
+    top: 0px;
+}
+
+#nav-icon2.collapsed span:nth-child(3),
+#nav-icon2.collapsed span:nth-child(4) {
+    top: 9px;
+    opacity: 1;
+}
+
+#nav-icon2.collapsed span:nth-child(5),
+#nav-icon2.collapsed span:nth-child(6) {
+    top: 18px;
+}
+
+#nav-icon2.collapsed span:nth-child(1),
+#nav-icon2.collapsed span:nth-child(2),
+#nav-icon2.collapsed span:nth-child(5),
+#nav-icon2.collapsed span:nth-child(6) {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+
+#nav-icon2 span:nth-child(1),
+#nav-icon2 span:nth-child(6) {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+#nav-icon2 span:nth-child(2),
+#nav-icon2 span:nth-child(5) {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+#nav-icon2 span:nth-child(1) {
+    left: 0px;
+    top: 8px;
+}
+
+#nav-icon2 span:nth-child(2) {
+    left: calc(50% - 5px);
+    top: 8px;
+}
+
+#nav-icon2 span:nth-child(3) {
+    left: -50%;
+    opacity: 0;
+}
+
+#nav-icon2 span:nth-child(4) {
+    left: 100%;
+    opacity: 0;
+}
+
+#nav-icon2 span:nth-child(5) {
+    left: 0px;
+    top: 17px;
+}
+
+#nav-icon2 span:nth-child(6) {
+    left: calc(50% - 5px);
+    top: 17px;
+}
+
+/******************************************************/
+/*    Зміна властивостей для екранів менше 767px.     */
+/*    Якщо меню має ховатись на більших екранах,      */
+/*    слід поміняти на 991px (також при цьому в html  */
+/*    змінити клас "navbar-expand-lg" для navbar.)    */
+/******************************************************/
+
+@media screen and (max-width: 767px) {
+    #mainNav.navbar-shrink #navigation {
+        margin-top: 3px;
+    }
+    #mainNav.navbar-shrink .navbar-toggler span {
+        background-color: #ffffff;
+    }
+    #mainNav.navbar-shrink .navbar-toggler.collapsed span {
+        background-color: #E63323;
+    }
+}
